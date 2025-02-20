@@ -6,7 +6,35 @@ This guide explains how to generate a QR code using Python and the `qrcode` libr
 
 Make sure you have Python installed. You can download Python from [python.org](https://www.python.org/downloads/).
 
-## Step 1: Install the `qrcode` library
+- [PyPi QRCode](https://pypi.org/project/qrcode/)
+
+## Step 1: Create and Activate a Virtual Environment
+
+Open your bash terminal and run the following to create a new virtual environment in your directory:
+
+```bash
+python -m venv my_env
+```
+
+Change to new virtual environment directory
+
+```bash
+cd my_env
+```
+
+Activate the virtual environment
+
+```bash
+. Scripts/activate
+```
+
+Switch back to main directory
+
+```bash
+cd ..
+```
+
+## Step 2: Install the `qrcode` library
 
 Open your terminal or command prompt and run the following command to install the library:
 
@@ -14,7 +42,7 @@ Open your terminal or command prompt and run the following command to install th
 pip install qrcode[pil]
 ```
 
-## Step 2: Write a Python script to create the QR code
+## Step 3: Write a Python script to create the QR code
 
 Create a new Python file named `generate_qr.py` and add the following code:
 
@@ -45,7 +73,7 @@ img.save("qrcode.png")
 print("QR code generated and saved as qrcode.png")
 ```
 
-## Step 3: Run the script
+## Step 4: Run the script
 
 Run your Python script from the terminal or command prompt:
 
@@ -55,7 +83,7 @@ python generate_qr.py
 
 After running the script, you will see a file named `qrcode.png` in your current directory.
 
-## Step 4: View your QR code
+## Step 5: View your QR code
 
 Open the `qrcode.png` file with an image viewer or web browser to see your generated QR code.
 
